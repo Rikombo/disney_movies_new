@@ -1,6 +1,11 @@
+import 'package:disney_movies_new/disney_movie.dart';
 import 'package:flutter/material.dart';
 
 class DisneyMoviePage extends StatelessWidget {
+  final DisneyMovie movie;
+
+  const DisneyMoviePage({super.key, required this.movie});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,19 +31,23 @@ class DisneyMoviePage extends StatelessWidget {
                   fontWeight: FontWeight.bold),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.only(
-                left: 15.0, right: 15.0, top: 8.0, bottom: 8.0),
-            child: Image.network(
-              'https://static.onecms.io/wp-content/uploads/sites/6/2019/04/mcdlian_ec010-2000.jpg',
+          Expanded(
+            child: Center(
+              child: Image.network(
+                movie.imageUrl,
+                fit: BoxFit.fitHeight,
+              ),
             ),
           ),
+          const SizedBox(height: 8),
           Padding(
-            padding: const EdgeInsets.only(
-                left: 15.0, right: 15.0, top: 8.0, bottom: 8.0),
+            padding: const EdgeInsets.all(8.0),
             child: Text(
-              'Lilo & Stitch is a 2002 American animated science fiction comdedy-drama film produced by Walt Disney Feature Animation and released by Walt Disney Pictures.',
-              style: TextStyle(fontSize: 20),
+              movie.description,
+              style: const TextStyle(
+                fontSize: 18,
+                color: Colors.black,
+              ),
             ),
           ),
           Spacer(
