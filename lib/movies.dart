@@ -1,7 +1,7 @@
 import 'package:disney_movies_new/disney_movie.dart';
 
 final movies = [
-  DisneyMovie(
+  const DisneyMovie(
     id: '1',
     title: 'Lilo & Stitch',
     description:
@@ -10,7 +10,7 @@ final movies = [
         'https://pyxis.nymag.com/v1/imgs/e95/5d4/e02729391d31693ad53b90ab5a9644c68c-lilo-stitch-6.1x.rsquare.w1400.jpg',
     rating: '4.5',
   ),
-  DisneyMovie(
+  const DisneyMovie(
     id: '2',
     title: 'The Lion King',
     description:
@@ -19,7 +19,7 @@ final movies = [
         'https://lumiere-a.akamaihd.net/v1/images/p_thelionking_19752_1_0b9de87b.jpeg',
     rating: '4.7',
   ),
-  DisneyMovie(
+  const DisneyMovie(
     id: '3',
     title: 'The Little Mermaid',
     description:
@@ -28,7 +28,7 @@ final movies = [
         'https://static.wikia.nocookie.net/international-dubbing/images/d/dc/The_Little_Mermaid.jpg',
     rating: '4.6',
   ),
-  DisneyMovie(
+  const DisneyMovie(
     id: '4',
     title: 'Lady and the Tramp',
     description:
@@ -37,7 +37,7 @@ final movies = [
         'https://lumiere-a.akamaihd.net/v1/images/p_ladyandthetramp_19879_a178c3df.jpeg',
     rating: '4.5',
   ),
-  DisneyMovie(
+  const DisneyMovie(
     id: '5',
     title: 'The Jungle Book',
     description:
@@ -46,7 +46,7 @@ final movies = [
         'https://lumiere-a.akamaihd.net/v1/images/p_thejunglebook1967_19869_f10b5016.jpeg',
     rating: '4.5',
   ),
-  DisneyMovie(
+  const DisneyMovie(
     id: '6',
     title: 'The Aristocats',
     description:
@@ -55,7 +55,7 @@ final movies = [
         'https://lumiere-a.akamaihd.net/v1/images/p_thearistocats_19754_9f944ce1.jpeg',
     rating: '4.5',
   ),
-  DisneyMovie(
+  const DisneyMovie(
     id: '7',
     title: 'The Fox and the Hound',
     description:
@@ -64,7 +64,7 @@ final movies = [
         'https://lumiere-a.akamaihd.net/v1/images/p_thefoxandthehound_19897_37a624d3.jpeg',
     rating: '4.5',
   ),
-  DisneyMovie(
+  const DisneyMovie(
     id: '8',
     title: 'Aladdin',
     description:

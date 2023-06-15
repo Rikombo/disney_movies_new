@@ -20,9 +20,9 @@ class DisneyMoviePage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Padding(
-            padding: const EdgeInsets.only(
-                left: 15.0, right: 15.0, top: 8.0, bottom: 8.0),
+          const Padding(
+            padding:
+                EdgeInsets.only(left: 15.0, right: 15.0, top: 8.0, bottom: 8.0),
             child: Text(
               'Lilo and Stitch',
               style: TextStyle(
@@ -50,19 +50,19 @@ class DisneyMoviePage extends StatelessWidget {
               ),
             ),
           ),
-          Spacer(
+          const Spacer(
             flex: (1),
           ),
           Padding(
             padding: const EdgeInsets.only(
                 left: 15.0, right: 15.0, top: 8.0, bottom: 8.0),
             child: Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                   color: Colors.deepPurple,
                   borderRadius: BorderRadius.all(Radius.circular(16))),
               alignment: Alignment.center,
               height: 50,
-              child: Row(
+              child: const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
@@ -72,7 +72,7 @@ class DisneyMoviePage extends StatelessWidget {
                     size: 35,
                   ),
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: EdgeInsets.all(8.0),
                     child: Text(
                       'Watch Now',
                       style: TextStyle(fontSize: 18, color: Colors.white),

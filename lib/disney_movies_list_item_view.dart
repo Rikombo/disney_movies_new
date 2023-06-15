@@ -1,11 +1,12 @@
 import 'package:disney_movies_new/disney_movie.dart';
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 
 class DisneyMovieListItemView extends StatelessWidget {
   final DisneyMovie movie;
 
   const DisneyMovieListItemView({
+    super.key,
     required this.movie,
   });
 
@@ -25,7 +26,7 @@ class DisneyMovieListItemView extends StatelessWidget {
                 fit: BoxFit.cover,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               width: 16,
             ),
             Expanded(
@@ -36,9 +37,10 @@ class DisneyMovieListItemView extends StatelessWidget {
                 children: [
                   Text(
                     movie.title,
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22),
+                    style: const TextStyle(
+                        fontWeight: FontWeight.bold, fontSize: 22),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 15,
                   ),
                   Text(
@@ -54,10 +56,11 @@ class DisneyMovieListItemView extends StatelessWidget {
               child: Text(
                 movie.rating,
                 textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                style:
+                    const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
               ),
             ),
-            Icon(
+            const Icon(
               Icons.star,
               size: 24,
               color: Colors.deepPurple,

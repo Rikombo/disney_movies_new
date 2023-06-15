@@ -1,7 +1,7 @@
 import 'package:disney_movies_new/disney_movie.dart';
 import 'package:disney_movies_new/disney_movie_page.dart';
 import 'package:disney_movies_new/movies.dart';
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 
 import 'disney_movies_list_item_view.dart';
